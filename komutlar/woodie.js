@@ -13,8 +13,8 @@ exports.run = function(client, message) {
         *İnsanları tek görüşte ondan nefret etmelerini sağlayabilmek
    *Şizofrenlik
    `, true)
-   .addField("Motto", ``, true)
-   .addField("", "")
+   .addField("Motto", `-`, true)
+   .addField("-", "-")
    
 
    message.channel.send(embed)

@@ -21,7 +21,6 @@ const config = require("./config.json");
 const ayarlar = require("./ayarlar.json");
 var prefix = ayarlar.prefix;
 let komutum = JSON.parse(fs.readFileSync("./komutlar.json", "utf8"));
-const ayarlar = require('./ayarlar.json');
 require('./util/eventLoader')(client);
 
 const log = message => {

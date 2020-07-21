@@ -7,7 +7,6 @@ const readdir = promisify(require("fs").readdir);
 const chalk = require("chalk");
 const fs = require("fs");
 const { stripIndents } = require("common-tags");
-require("moment-duration-format");
 const moment = require("moment");
 
 const request = require("request");

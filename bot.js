@@ -9,7 +9,6 @@ const fs = require("fs");
 const { stripIndents } = require("common-tags");
 const moment = require("moment");
 const snekfetch = require("snekfetch");
-const useful = require("./x.js");
 const config = require("./config.json");
 const ayarlar = require("./ayarlar.json");
 var prefix = ayarlar.prefix;

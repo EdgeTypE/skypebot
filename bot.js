@@ -1,4 +1,3 @@
-const ms = require("parse-ms");
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const bot = new Discord.Client();

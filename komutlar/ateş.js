@@ -1,8 +1,5 @@
 const Discord = require('discord.js');
 exports.run = (client, message, args) => {
-  const snekfetch = require("snekfetch");
-snekfetch.get(`https://discordbots.org/api/bots/${client.user.id}/check?userId=${message.author.id}`)
-.then(response => {
 var check = 1;
 if(check == 1) {  
     let guild = message.guild

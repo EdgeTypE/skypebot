@@ -8,10 +8,7 @@ const chalk = require("chalk");
 const fs = require("fs");
 const { stripIndents } = require("common-tags");
 const moment = require("moment");
-
-const request = require("request");
 const db = require("quick.db");
-const jimp = require("jimp");
 const Jimp = require("jimp");
 const snekfetch = require("snekfetch");
 const useful = require("./x.js");

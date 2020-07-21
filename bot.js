@@ -1,12 +1,28 @@
-const Discord = require('discord.js');
+const ms = require("parse-ms");
+const Discord = require("discord.js");
 const client = new Discord.Client();
-const ayarlar = require('./ayarlar.json');
-const chalk = require('chalk');
-const fs = require('fs');
-const moment = require('moment');
-require('./util/eventLoader')(client);
+const bot = new Discord.Client();
+const { RichEmbed } = require("discord.js");
+const { promisify } = require("util");
+const readdir = promisify(require("fs").readdir);
+const chalk = require("chalk");
+const fs = require("fs");
+const { stripIndents } = require("common-tags");
+require("moment-duration-format");
+const moment = require("moment");
 
+const request = require("request");
+const db = require("quick.db");
+const jimp = require("jimp");
+const Jimp = require("jimp");
+const snekfetch = require("snekfetch");
+const useful = require("./x.js");
+const config = require("./config.json");
+const ayarlar = require("./ayarlar.json");
 var prefix = ayarlar.prefix;
+let komutum = JSON.parse(fs.readFileSync("./komutlar.json", "utf8"));
+const ayarlar = require('./ayarlar.json');
+require('./util/eventLoader')(client);
 
 const log = message => {
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] ${message}`);

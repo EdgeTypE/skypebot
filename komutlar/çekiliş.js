@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const moment = require('moment');
-const ms = require('ms')
 exports.run = async (client, message) => {
 var time = moment().format('Do MMMM YYYY , hh:mm');
 var room;

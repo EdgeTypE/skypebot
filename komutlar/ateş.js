@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 exports.run = (client, message, args) => {
-  const snekfetch = require("snekfetch");
+const snekfetch = require("snekfetch");
    let guild = message.guild
    let reason = args.slice(1).join(' ');
    let user = message.mentions.users.first();

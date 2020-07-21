@@ -1,5 +1,4 @@
-
-onst Discord = require('discord.js');
+const Discord = require('discord.js');
 
 
 exports.run = function(client, message, args) {

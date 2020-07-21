@@ -8,7 +8,6 @@ const chalk = require("chalk");
 const fs = require("fs");
 const { stripIndents } = require("common-tags");
 const moment = require("moment");
-const Jimp = require("jimp");
 const snekfetch = require("snekfetch");
 const useful = require("./x.js");
 const config = require("./config.json");

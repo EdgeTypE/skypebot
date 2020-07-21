@@ -31,7 +31,6 @@ let embed = new Discord.RichEmbed()
       .setColor('RANDOM')
       .setDescription(`${client.emojis.get(client.emojiler.hayır)} **Hata**, bu komutu kullanmak için **12 saat aralıkla** **[BURADAN](https://discordbots.org/bot/${client.user.id}/vote)**  botu oylamanız gerekmektedir. Onaylanması **1-4** dakikayı bulabilir, lütfen bekleyin. `)
     message.channel.send(embed)
-      return }});
   
 };
 

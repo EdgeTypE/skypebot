@@ -15,7 +15,7 @@ exports.run = (client, message, params) => {
     .setColor(3447003)
     .setTimestamp()
     .setDescription('')
-        .setImage(`https://www.bobiler.org/monte/preview/116199/bobiler.gif`)
+    .setImage(`https://www.bobiler.org/monte/preview/116199/bobiler.gif`)
     return message.channel.sendEmbed(sunucubilgi);
     }
 };

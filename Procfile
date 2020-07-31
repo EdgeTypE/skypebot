@@ -1,1 +1,1 @@
-worker node brot.js
+worker node bot.js

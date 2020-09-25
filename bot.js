@@ -10,6 +10,7 @@ const { stripIndents } = require("common-tags");
 const moment = require("moment");
 const snekfetch = require("snekfetch");
 const config = require("./config.json");
+const client = require('discord-rich-presence')('180984871685062656');
 const ayarlar = require("./ayarlar.json");
 var prefix = ayarlar.prefix;
 let komutum = JSON.parse(fs.readFileSync("./komutlar.json", "utf8"));

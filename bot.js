@@ -34,6 +34,15 @@ fs.readdir('./komutlar/', (err, files) => {
   });
 });
 
+client.updatePresence({
+  state: '"/yardım" ile hizmetinizdeyim',
+  details: 'Skype tekrar aktif!',
+  startTimestamp: Date.now(),
+  endTimestamp: Date.now() + 1337,
+  largeImageKey: '1200px-skype-icon',
+  instance: true,
+});
+
 client.reload = command => {
   return new Promise((resolve, reject) => {
     try {

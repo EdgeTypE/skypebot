@@ -1,6 +1,5 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const client = require('discord-rich-presence')('180984871685062656');
 const bot = new Discord.Client();
 const { RichEmbed } = require("discord.js");
 const { promisify } = require("util");

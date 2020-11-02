@@ -100,8 +100,10 @@ client.on('message', msg => {
 
 client.elevation = message => {
   if(!message.guild) {
-	return; }
+    return; }
   let permlvl = 0;
+  if(message.member.guild.me.hasPermission('BAN_MEMBER') permlvl = 2;
+  if(message.member.guild.me.hasPermission('ADMINISTRATOR') permlvl = 3;
   if (message.author.id === ayarlar.sahip) permlvl = 4;
   return permlvl;
 };

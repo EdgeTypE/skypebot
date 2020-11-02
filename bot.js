@@ -87,7 +87,7 @@ client.unload = command => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sa') {
-		if (!msg.guild.member(msg.author).hasPermission("BAN_MEMBERS")) {
+		if (!msg.guild.member(msg.author).hasPermission("SAY")) {
 			msg.author.sendMessage('Aleyküm selam,  hoş geldin ^^'); 
 		} else {
 		msg.reply('Aleyküm selam, hoş geldin ^^');
@@ -98,15 +98,6 @@ client.on('message', msg => {
 
 ////////////////////////
 
-client.elevation = message => {
-  if(!message.guild) {
-    return; }
-  let permlvl = 0;
-  if(message.member.guild.me.hasPermission('BAN_MEMBER') permlvl = 2;
-  if(message.member.guild.me.hasPermission('ADMINISTRATOR') permlvl = 3;
-  if (message.author.id === ayarlar.sahip) permlvl = 4;
-  return permlvl;
-};
 
 var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
 

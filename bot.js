@@ -1,19 +1,12 @@
-const Discord = require("discord.js");
+const Discord = require('discord.js');
 const client = new Discord.Client();
-const bot = new Discord.Client();
-const { RichEmbed } = require("discord.js");
-const { promisify } = require("util");
-const readdir = promisify(require("fs").readdir);
-const chalk = require("chalk");
-const fs = require("fs");
-const { stripIndents } = require("common-tags");
-const moment = require("moment");
-const snekfetch = require("snekfetch");
-const config = require("./config.json");
-const ayarlar = require("./ayarlar.json");
-var prefix = ayarlar.prefix;
-let komutum = JSON.parse(fs.readFileSync("./komutlar.json", "utf8"));
+const ayarlar = require('./ayarlar.json');
+const chalk = require('chalk');
+const fs = require('fs');
+const moment = require('moment');
 require('./util/eventLoader')(client);
+
+var prefix = ayarlar.prefix;
 
 const log = message => {
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] ${message}`);
@@ -87,19 +80,90 @@ client.unload = command => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sa') {
-		if (!msg.guild.member(msg.author).hasPermission("SAY")) {
-			msg.author.sendMessage('Aleyküm selam,  hoş geldin ^^'); 
-		} else {
-		msg.reply('Aleyküm selam, hoş geldin ^^');
-		}
-	}
+    msg.reply('**Aleyküm selam**');
+  }
 });
 
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'aq') {
+    msg.reply('**Argo Kelime Kullanma**');
+  }
+});
 
-////////////////////////
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'sik') {
+    msg.reply('**Argo Kelime Kullanma**');
+  }
+});
 
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'sikerim') {
+    msg.reply('**Argo Kelime Kullanma**');
+  }  
+});
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'amk') {
+    msg.reply('**Argo Kelime Kullanma**');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'siktirgit') {
+    msg.reply('**Argo Kelime Kullanma**');
+  }
+if (msg.content === 'selamın aleyküm') {
+   	msg.reply('ve aleyküm selam');
+  }
+
+  if (msg.content === 'bye bye') {
+   	msg.reply('su gibi git su gibi gel');
+  }
+
+  if (msg.content === 'günaydın') {
+   	msg.reply('sana da günaydın');
+  }
+
+  if (msg.content === 'herkese günaydın') {
+   	msg.reply('yepyeni bir güne merhaba :)');
+  }
+
+  if (msg.content === 'iyi geceler') {
+   	msg.reply('sana da iyi geceler');
+  }
+
+  if (msg.content === 'sa') {
+   	msg.reply('**Sunucuda Argo Kelime Kullanma**');
+  }
+
+  if (msg.content === 'iyi akşamlar') {
+   	msg.reply('sana da iyi akşamlar');
+  }
+
+  if (msg.content === 'selamın aleyküm') {
+   	msg.reply('ve aleyküm selam');
+  }
+
+  if (msg.content === 'güle güle') {
+   	msg.reply('sana da güle güle');
+  }
+  
+});
+
+client.elevation = message => {
+  if(!message.guild) {
+	return; }
+  let permlvl = 0;
+  if (message.member.hasPermission("BAN_MEMBERS")) permlvl = 2;
+  if (message.member.hasPermission("ADMINISTRATOR")) permlvl = 3;
+  if (message.author.id === ayarlar.sahip) permlvl = 4;
+  return permlvl;
+};
 
 var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
+// client.on('debug', e => {
+//   console.log(chalk.bgBlue.green(e.replace(regToken, 'that was redacted')));
+// });
 
 client.on('warn', e => {
   console.log(chalk.bgYellow(e.replace(regToken, 'that was redacted')));

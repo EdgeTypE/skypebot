@@ -84,78 +84,12 @@ client.on('message', msg => {
   }
 });
 
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'aq') {
-    msg.reply('**Argo Kelime Kullanma**');
-  }
-});
 
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'sik') {
-    msg.reply('**Argo Kelime Kullanma**');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'sikerim') {
-    msg.reply('**Argo Kelime Kullanma**');
-  }  
-});
-
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'amk') {
-    msg.reply('**Argo Kelime Kullanma**');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'siktirgit') {
-    msg.reply('**Argo Kelime Kullanma**');
-  }
-if (msg.content === 'selamın aleyküm') {
-   	msg.reply('ve aleyküm selam');
-  }
-
-  if (msg.content === 'bye bye') {
-   	msg.reply('su gibi git su gibi gel');
-  }
-
-  if (msg.content === 'günaydın') {
-   	msg.reply('sana da günaydın');
-  }
-
-  if (msg.content === 'herkese günaydın') {
-   	msg.reply('yepyeni bir güne merhaba :)');
-  }
-
-  if (msg.content === 'iyi geceler') {
-   	msg.reply('sana da iyi geceler');
-  }
-
-  if (msg.content === 'sa') {
-   	msg.reply('**Sunucuda Argo Kelime Kullanma**');
-  }
-
-  if (msg.content === 'iyi akşamlar') {
-   	msg.reply('sana da iyi akşamlar');
-  }
-
-  if (msg.content === 'selamın aleyküm') {
-   	msg.reply('ve aleyküm selam');
-  }
-
-  if (msg.content === 'güle güle') {
-   	msg.reply('sana da güle güle');
-  }
-  
-});
 
 client.elevation = message => {
   if(!message.guild) {
 	return; }
   let permlvl = 0;
-  if(msg.member.hasPermission("BAN_MEMBERS")) permlvl = 2;
-  if(msg.member.hasPermission("ADMINISTRATOR")) permlvl = 3;
   if (message.author.id === ayarlar.sahip) permlvl = 4;
   return permlvl;
 };

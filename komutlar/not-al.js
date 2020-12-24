@@ -16,5 +16,5 @@ module.exports.conf = {
 		
 module.exports.help = {
 	name: "not-al"
- 	description: 'Skype Bota destek olursun.',
+ 	description: 'Yazdığını not alır.',
 }

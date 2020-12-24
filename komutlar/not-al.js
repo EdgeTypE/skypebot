@@ -16,5 +16,4 @@ module.exports.conf = {
 		
 module.exports.help = {
 	name: "not-al"
- 	description: 'Yazdığını not alır.',
 }

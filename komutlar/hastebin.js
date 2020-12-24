@@ -1,8 +1,6 @@
 const snekfetch = require('snekfetch');
 
 module.exports.run = async (bot, message, args) => {
-  if (!message.guild.id === "529752525578960916","513028238793244683") return message.channel.send(":warning: Test1")
-
 	if (!args.slice(0)
 		.join(' ')) return message.channel.send(':warning: Test2')
 	snekfetch.post('https://hastebin.com/documents')

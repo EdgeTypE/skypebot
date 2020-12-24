@@ -2,7 +2,7 @@ const snekfetch = require('snekfetch');
 
 module.exports.run = async (bot, message, args) => {
 	if (!args.slice(0)
-		.join(' ')) return message.channel.send(':warning: Test2')
+		.join(' ')) return message.channel.send(':warning: Neyi not almak istediğini yazmalısın.')
 	snekfetch.post('https://hastebin.com/documents')
 		.send(args.slice(0)
 			.join(' '))
@@ -11,9 +11,9 @@ module.exports.run = async (bot, message, args) => {
 		});
 	}
 module.exports.conf = {
-	aliases: ["hb","haste","paste"]
+	aliases: ["hb","haste","paste","not-al"]
 }
 		
 module.exports.help = {
-	name: "hastebin"
+	name: "not-al"
 }

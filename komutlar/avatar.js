@@ -1,25 +1,30 @@
-const Discord = require('discord.js');
+const Discord = require("discord.js");
 
-
-exports.run = function(client, message) {
-
-    const embed = new Discord.RichEmbed()
-        .setAuthor(message.author.tag)
-        .setImage(message.author.avatarURL)
-
+module.exports.run = async (bot, message, args) => {
+  if(!args[0]){
+    let image = message.author.displayAvatarURL;
+    let embed = new Discord.RichEmbed()
+    .setAuthor(`👤 ${message.author.username}#${message.author.discriminator}`)
+    .setColor("#4ea4ed")
+    .setImage(image)
+     message.channel.send(embed);
+  }
+  if(args[0]){
+    let user = message.mentions.users.first();
+    let image = user.displayAvatarURL;
+    let embed = new Discord.RichEmbed()
+    .setAuthor(`👤 ${user.username}#${user.discriminator}`)
+    .setColor("#4ea4ed")
+    .setImage(image)
     message.channel.send(embed);
+  }
 
-};
+}
 
 exports.conf = {
-  enabled: true, 
-  guildOnly: true, 
-  aliases: ['avatarım'],
-  permLevel: 0 
-};
+    aliases: []
+  };
 
-exports.help = {
-  name: 'avatar', 
-  description: 'Avatarınızı gösterir',
-  usage: 'avatar'
-};
+module.exports.help = {
+  name: "avatar"
+}

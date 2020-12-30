@@ -98,7 +98,7 @@ if(check == 1) {
             message.channel.send(embed)
               return }}
   
-}
+
 exports.conf = {
     enabled: true,
     guildOnly: false,

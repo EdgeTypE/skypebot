@@ -4,9 +4,6 @@ var mcPort = 25565
 var ayarlar = require('../ayarlar.json')
 var prefix = ayarlar.prefix;
 exports.run = async (client, message, args) => {
-.set("Authorization", client.ayarlar.dbltoken)
-.then(response => {
-var check = response.body.voted;
 if(check == 1) {
     var user = message.mentions.users.first() || message.author;
     if (!message.guild) user = message.author;

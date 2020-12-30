@@ -16,6 +16,5 @@
     "generate-password": "^1.4.1",
     "math-expression-evaluator": "^1.2.17",
     "moment": "^2.22.2",
-    "cowsay": "^1.4.0",
   }
 }

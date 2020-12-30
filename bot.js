@@ -5,8 +5,6 @@ const chalk = require('chalk');
 const fs = require('fs');
 const moment = require('moment');
 
-const jimp = require("jimp");
-const Jimp = require("jimp");
 const snekfetch = require("snekfetch");
 require('./util/eventLoader')(client);
 

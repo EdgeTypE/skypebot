@@ -15,7 +15,7 @@ exports.run = (client, message, params) => {
     .setColor(3447003)
     .setTimestamp()
     .setDescription('')
-		.setImage(`https://images-ext-1.discordapp.net/external/171uiKxRgITAipvhLwQWRN0gDHVsry0MC9oYnff9Vnw/http/i.imgur.com/O3DHIA5.gif`)
+		.setImage(`https://cdn.discordapp.com/attachments/511127390248894474/800783822400389230/tenor.gif`)
     return message.channel.sendEmbed(sunucubilgi);
     }
 };

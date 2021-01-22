@@ -80,6 +80,11 @@ client.unload = command => {
   });
 };
 
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'sa') {
+    msg.reply('**Aleyküm selam**');
+  }
+});
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'esen ola') {

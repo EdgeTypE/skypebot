@@ -82,8 +82,8 @@ client.unload = command => {
 
 
 client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'Esen ola') {
-    msg.reply('**Esenlikler getirdin.**');
+  if (msg.content.toLowerCase() === 'sa') {
+    msg.reply('**Aleyküm selam**');
   }
 });
 

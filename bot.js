@@ -86,7 +86,11 @@ client.on('message', msg => {
   }
 });
 
-
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'Esen ola') {
+    msg.reply('**Esenlikler getirdin.**');
+  }
+});
 
 client.elevation = message => {
   if(!message.guild) {

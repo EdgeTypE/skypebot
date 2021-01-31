@@ -87,8 +87,14 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'Çok saçma') {
+    msg.reply('**Aleyküm selam**');
+  }
+});
+
+client.on('message', msg => {
   if (msg.content.toLowerCase() === 'esen ola') {
-    msg.reply('**Esenlikler getirdin**');
+    msg.reply('**https://cdn.discordapp.com/attachments/416629724492595220/805525772202016788/unknown.png**');
   }
 });
 

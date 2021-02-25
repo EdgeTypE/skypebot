@@ -16,7 +16,7 @@ exports.run = function(client, message) {
 		 const embedyazı = new Discord.RichEmbed()
 		.setColor(0xf4b942)
 		.setDescription(cevap)
-		.setThumbnail("https://image.winudf.com/v2/image/eWcuaGVhZHNvcnRhaWxzX3NjcmVlbl8wXzE1MzMzNDkzNjhfMDAx/screen-0.jpg?fakeurl=1&type=.jpg")
+		.setThumbnail("https://media.discordapp.net/attachments/416629724492595220/814526773844901938/unknown.png")
 		message.channel.send(embedyazı);
 		
 	} else if (cevap === "YAZI-TURA:__TURA__**") {
@@ -24,7 +24,7 @@ exports.run = function(client, message) {
 		const embedtura = new Discord.RichEmbed()
 		.setColor(0xf4b942)
 		.setDescription(cevap)
-		.setThumbnail("http://iblog.milliyet.com.tr/imgroot/blogv7/Blog333/2011/09/11/10/148618-3-4-ec70d.jpg")
+		.setThumbnail("https://media.discordapp.net/attachments/416629724492595220/814527635132645416/unknown.png")
 		message.channel.send(embedtura);
 		
 	}

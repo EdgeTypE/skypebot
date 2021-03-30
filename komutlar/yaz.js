@@ -15,7 +15,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'yazzt',
+  name: 'yazztt3',
   description: 'İstediğiniz şeyi bota yazdırır.',
-  usage: 'yazzt [yazdırmak istediğiniz şey]'
+  usage: 'yazzt3 [yazdırmak istediğiniz şey]'
 };

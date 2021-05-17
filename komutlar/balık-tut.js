@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 exports.run = (client, message) => {
 message.channel.send('Sanarım oltana balık düştü.').then(message => {
-var espriler = ['Sazan Tuttun! :fish:' ,'Köpek Balığı Tuttun.' ,'Uskumru Tuttun! :fish:' ,'Mezgit Tuttun! :fish:' ,'Japon Balığı Tuttun Yemeyi Düşünmüyorsun Herhalde?' ,'Hamsi Tuttun! :fish:' ,'Levrek Tuttun! :fish:' ,'Hiçbir şey Tutamadın Maalesef! :wastebasket:' ,'Alabalık Tuttun! :fish:' ,'Maalesef Balık Oltadan Kaçtı! :wastebasket:' ,'İstavrit Tuttun! :fish:'];
+var espriler = ['Sazan Tuttun! :fish:' ,'Köpek Balığı Tuttun.' ,'Uskumru Tuttun! :fish:' ,'Mezgit Tuttun! :fish:' ,'Japon Balığı Tuttun Yemeyi Düşünmüyorsun Herhalde?' ,'Hamsi Tuttun! :fish:' ,'Levrek Tuttun! :fish:' ,'Hiçbir şey Tutamadın Maalesef! :wastebasket:' ,'Alabalık Tuttun! :fish:' ,'Maalesef Balık Oltadan Kaçtı! :wastebasket:' ,'İstavrit Tuttun! :fish:' ,'Scooby-Doo tuttun! :question:'];
    var espri = espriler[Math.floor(Math.random() * espriler.length)];
          message.edit(`${espri}`);
    });

@@ -92,7 +92,7 @@ client.on('message', msg => {
   }
 });
 
-message.guild.channels.create('mapus', {
+message.guild.channels.create('name', {
 	type: 'GUILD_TEXT',
     permissionOverwrites: [{
     	id: message.guild.id,

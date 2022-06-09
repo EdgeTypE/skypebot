@@ -92,6 +92,16 @@ client.on('message', msg => {
   }
 });
 
+message.guild.channels.create('mapus', {
+	type: 'GUILD_TEXT',
+    permissionOverwrites: [{
+    	id: message.guild.id,
+        allow: ['VIEW_CHANNEL'],
+        deny: ['SEND_MESSAGES'],
+	}]
+});
+console.info(`name channel: mapus | type: text channel`)
+
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'esen ola') {
     msg.reply('**Hoş geldin, esenlikler getirdin.**');

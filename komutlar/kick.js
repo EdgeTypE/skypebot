@@ -10,8 +10,8 @@ exports.run = (client, message, args) => {
   let guild = message.guild
   let reason = args.slice(1).join(' ');
   let user = message.mentions.users.first();
-  let modlog = guild.channels.find('name', '💬│sohbet');
-  if (!modlog) return message.reply('`💬│sohbet` kanalı oluşturman lazım.');
+  let modlog = guild.channels.find('name', 'mapus');
+  if (!modlog) return message.reply('`mapus` kanalı oluşturman lazım.');
   if (reason.length < 1) return message.reply('niye kick adamı onu yazaydın.');
   if (message.mentions.users.size < 1) return message.reply('kimi kickleyecem onu yaz.').catch(console.error);
 

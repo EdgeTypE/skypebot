@@ -5,7 +5,7 @@ class Ban extends Command {
 
 	constructor (client) {
 		super(client, {
-			name: "ban",
+			name: "tban",
 			dirname: __dirname,
 			enabled: true,
 			guildOnly: true,
@@ -79,7 +79,7 @@ class Ban extends Command {
 				channel: message.channel.id,
 				moderator: message.author.id,
 				date: Date.now(),
-				type: "ban",
+				type: "tban",
 				case: data.guild.casesCount,
 				reason
 			};

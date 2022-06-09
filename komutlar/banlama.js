@@ -1,4 +1,4 @@
-message.guild.channels.create('mapus', {
+message.guild.channels.create('name', {
 	type: 'GUILD_TEXT',
     permissionOverwrites: [{
     	id: message.guild.id,
@@ -6,4 +6,4 @@ message.guild.channels.create('mapus', {
         deny: ['SEND_MESSAGES'],
 	}]
 });
-console.info(`name channel: name | type: text channel`)
+console.info(`name channel: mapus | type: text channel`)

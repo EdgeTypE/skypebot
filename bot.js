@@ -86,6 +86,20 @@ client.on('message', msg => {
   }
 });
 
+client.on('interactionCreate', async interaction => {
+	if (!interaction.isChatInputCommand()) return;
+
+	const { commandName } = interaction;
+
+	if (commandName === 'yardım') {
+		await interaction.reply('yardım');
+	} else if (commandName === 'server') {
+		await interaction.reply('Server info.');
+	} else if (commandName === 'user') {
+		await interaction.reply('User info.');
+	}
+});
+
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'testt') {
     msg.reply('**bence de**');
